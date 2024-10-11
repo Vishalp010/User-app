@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+input{
+  padding: 8px;
+  margin: 0px 10px;
+  border: solid 1px black ;
+  border-radius: 10px;
+  width: 90%;
+}
+.user{
+  width: 192px;
+  font-size: x-large;
+  font-weight: 100;
+  cursor: pointer;
+  margin-left: 0px;
+}
+.aqua{
+  background-color: aqua;
+}
+.green{
+  background-color: rgb(142, 212, 142);
+}
+.red{
+  background-color: rgb(231, 188, 188);
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
